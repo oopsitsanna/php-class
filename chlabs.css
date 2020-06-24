@@ -1,0 +1,51 @@
+/* **************************************
+     Anna O.      w1627858      4.3.2019 
+     ************************************** */
+body { margin: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+    background-color: #eee;
+	padding-top: 0px; margin-top: 0px;
+}
+h1 {
+	color: black;
+	font-family: Palatino, Arial, sans-serif;
+	position: relative;  font-size: 35px; text-align: center;
+}
+p { font-family: Palatino, Tahoma, sans-serif;
+	padding-left: 25px;
+	/*margin: 0 0 5px 5px; tahoma*/
+	margin: 5px 20px 5px 5px;
+	font-size: 0.85 em;
+	text-indent: 0em;
+	word-spacing: 0.4em;
+}
+a:link {
+  color: red; 
+  background-color: transparent; 
+  text-decoration: underline;
+}
+
+a:visited {
+  color: blue;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+footer {  font-size: .70em;
+		font-style: italic; 
+		text-align: center;
+		margin-top: 2px;
+		margin-bottom: 12px;
+		position: relative;}

@@ -1,0 +1,141 @@
+/* **************************************
+     Anna O.      w1627858      4.3.2019 
+     ************************************** */
+* {
+  box-sizing: border-box;
+}
+
+body { margin: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+    background-color: #eee;
+	padding-top: 0px; margin-top: 0px;
+}
+/*Sets background image for the whole page*/
+.bg-image { background-image: url("images/background.jpg");
+/*background-color: #cccccc;*/
+height: 930px;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative; 
+}
+/*Sets h1 #003459*/
+h1 {
+	color: black;
+	font-family: Palatino, Arial, sans-serif;
+	position: relative;  font-size: 35px; text-align: center;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+}
+p { font-family: Palatino, Tahoma, sans-serif;
+	padding-left: 25px;
+	/*margin: 0 0 5px 5px; tahoma*/
+	margin: 5px 20px 5px 5px;
+	font-size: 0.85 em;
+	text-indent: 0em;
+	word-spacing: 0.4em;
+}
+.assignments{
+	/*height: 10em;*/
+	margin-bottom: 1em;
+}
+/*conteiner for intro section*/
+.intro	{
+	/*https://www.w3schools.com/howto/howto_css_circles.asp*/
+	margin: 5px 10px 5px 5px;
+	font-size: 2.5em;
+}
+/*Sets two columns in intro container*/
+.intro_two_col {
+  -webkit-column-count: 2; /* Chrome, Safari, Opera */
+  -moz-column-count: 2; /* Firefox */
+  column-count: 2;
+  -webkit-column-gap: 60px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 60px; /* Firefox */
+  column-gap: 60px;
+  -webkit-column-rule-style: solid; /* Chrome, Safari, Opera */
+  -moz-column-rule-style: solid; /* Firefox */
+  column-rule-style: solid;
+  -webkit-column-rule-width: 3px; /* Chrome, Safari, Opera */
+  -moz-column-rule-width: 3px; /* Firefox */
+  column-rule-width: 3px;
+  -webkit-column-rule-color: #228b22; /* Chrome, Safari, Opera */
+  -moz-column-rule-color: #228b22; /* Firefox */
+  column-rule-color: #228b22;
+  -webkit-column-width: 100px; /* Chrome, Safari, Opera */
+  -moz-column-width: 100px; /* Firefox rgba(255, 255, 255, 0.8)*/
+  column-width: 100px;
+}
+/*Sets container in 3 columns for assignments section*/
+.grid-container {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: auto 50% auto;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(76, 175, 80, 0.2);
+
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+/*style list of chapters*/
+ol {
+  counter-reset: li;
+  list-style: none;
+  *list-style: decimal; /* Keep using default numbering for IE6/7 */
+  font: 16px 'Arial', 'lucida sans', sans-serif;
+  font-weight: bold;
+  padding: 0;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  width: 200px;
+  margin: 0 auto;
+}
+/*ol ol {
+  margin-left: 2em;
+}*/
+.rounded-list a {
+  position: relative;
+  display: block;
+  padding: .4em .4em .4em 2em;
+  *padding: .4em;
+  margin: .5em 0;
+    background: rgb(255,165,0,.3);
+  color: #444;
+    text-decoration: none;
+  border-radius: .3em;
+    transition: all .5s ease-out; 
+}
+.rounded-list a:hover{
+  background: #bc7f10;
+}
+.rounded-list a:before{
+  content: counter(li);
+  counter-increment: li;
+  position: absolute; 
+  left: -1.3em;
+  top: 50%;
+  margin-top: -1.3em;
+  background: 	#76bfc5;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  border: .1em solid #419298;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 2em;
+  transition: all .3s ease-out;
+}
+
+/*styles for footer section #87ceeb #fff*/
+footer {  font-size: .70em;
+		font-style: italic; 
+		text-align: center;
+		margin-top: 2px;
+		margin-bottom: 12px;
+		position: relative;}
